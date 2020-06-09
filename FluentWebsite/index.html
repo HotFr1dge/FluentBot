@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Polski nowoczesny bot posiadający dużo ciekawych i przydatnych poleceń! Posiada komendy informacyjne w tym pogodę, kursy walut, realistyczne zdjęcia NSFW, system poziomów podobny do MEE6 oraz wiele więcej!">
+  <meta name="author" content="HotFr1dge">
+
+  <title>Fluent - Polski bot Discord</title>
+  <link rel="icon" href="https://images.discordapp.net/avatars/663871990435676160/c2d31b8341da52c62cc9b0cb773eb189.png?size=32">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body id="page-top" class="overflow">
+  <div class="loader"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://images.discordapp.net/avatars/663871990435676160/c2d31b8341da52c62cc9b0cb773eb189.png?size=64"/> Fluent</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#komendy">Komendy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#status">Pomoc</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./api/index.html">API</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Fluent</h1>
+          <p class="lead">Polski nowoczesny bot posiadający dużo ciekawych i przydatnych poleceń! Posiada komendy informacyjne w tym pogodę, kursy walut,<span class="topgg"> realistyczne zdjęcia NSFW,</span> system poziomów podobny do MEE6 oraz wiele więcej!</p>
+          <a href="https://discordapp.com/oauth2/authorize?client_id=663871990435676160&scope=bot&permissions=2146958847" class="btn-basic">Zaproś</a>
+          <a href="https://top.gg/bot/663871990435676160/vote" class="btn-basic">Zagłosuj</a>
+        </div>
+      </div>
+    </div>
+    <div class="svg-border-rounded">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+    </div>
+  </header>
+
+  <section id="komendy">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 data-aos="fade-right" data-aos-duration="500">Komendy i funkcje</h2>
+          <p class="lead">Oto część najciekawszych komend bota, jeśli chcesz zobaczyć więcej dodaj naszego bota na serwer:</p>
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed command" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <code>-pogoda</code>
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Jeśli potrzebujesz sprawdzić pogodę w danym miejscu, pomoże ci w tym komenda <code>-pogoda</code></p>
+                  <img src="img/pogoda.png" class="img-fluid" width="500"/>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed command" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <code>-kurs</code>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Najbardziej aktualne kursy walut ustalane przez Narodowy Bank Polski.</p>
+                  <img src="img/kurs.png" class="img-fluid" width="500"/>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed command" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <code>-rank</code>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Aktualny poziom na serwerze w postaci karty.</p>
+                  <img src="img/rank.png" class="img-fluid" width="500"/>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed command" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <code>-hug</code> & <code>-slap</code>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Przytul i uderz. Możesz uderzyć oraz przetulić wybranego użytkownika, a potem sprawdzić ilość przytuleń swoich lub kogoś innego.</p>
+                  <img src="img/hug.gif" class="img-fluid" width="500" style="margin-bottom: 5px;"/>
+                  <img src="img/slap.gif" class="img-fluid" width="500"/>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed command" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Generowanie memów/obrazków
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p><code>-threats</code>, <code>-changemymind</code>, <code>-koala</code>, <code>-kot</code>, <code>-lis</code>, <code>-panda</code>, <code>-pies</code>, <code>-pikachu</code>, <code>-ptak</code></p>
+                  <img src="img/zaglozenia.png" class="img-fluid" width="500" style="margin-bottom: 5px;"/>
+                  <img src="img/change-my-mind.png" class="img-fluid" width="500"/>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed command" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Komendy moderacyjne
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p><code>-kick</code>, <code>-ban</code>, <code>-clear</code>, <code>-say</code>, <code>-warn</code>, <code>-unwarn</code></p>
+                  <img src="img/moderacyjne.png" class="img-fluid" width="500"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="status" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 data-aos="fade-right" data-aos-duration="500">Pomoc i wsparcie</h2>
+          <p class="lead">
+            Jeśli bot nie reaguję na polecenia prawdopodobnie wprowadzamy aktualizacje. Jeśli masz problemy z botem pisz na naszym <a href="https://discord.gg/Yfp3X26">serwerze wsparcia</a>, a napewno ktoś ci szybko pomoże.
+            <div class="row text-center">
+				<div class="col-md-6 mb-5">
+				  <a href="https://top.gg/bot/663871990435676160" >
+					<img src="https://top.gg/api/widget/663871990435676160.svg" alt="Fluent" />
+				  </a>
+				</div>
+				<div class="col-md-6">
+					<iframe src="https://discordapp.com/widget?id=484076875254202388&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+				</div>
+			</div>
+		  </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-purple">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6"><p class="m-0 text-left text-white">Copyright &copy; Fluent 2019-2020</p></div>
+        <div class="col-lg-6"><p class="m-0 text-right text-white">Created by HotFr1dge#3063</p></div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+        $('#mainNav').addClass('navbar-scrolled');
+      } else {
+        $('#mainNav').removeClass('navbar-scrolled');
+      }
+    });
+    AOS.init();
+    $(window).load(function() {
+        $('body').removeClass('overflow');
+        $(".loader").fadeOut("slow");
+    });
+    if (window.top!=window.self) {
+        $('.topgg').fadeOut("slow");
+    }
+  </script>
+
+</body>
+
+</html>

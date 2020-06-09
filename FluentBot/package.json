@@ -1,0 +1,25 @@
+{
+  "name": "fluent-bot",
+  "version": "1.0.0",
+  "description": "Taki lepszy Spejson ale w JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "HotFr1dge",
+  "license": "MIT",
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "canvas": "^2.6.1",
+    "canvas-constructor": "^3.1.0",
+    "common-tags": "^1.8.0",
+    "dabi-images": "^2.7.5",
+    "dblapi.js": "^2.3.1",
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.0",
+    "superagent": "^5.2.2"
+  }
+}
